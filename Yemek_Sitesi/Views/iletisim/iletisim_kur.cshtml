@@ -1,0 +1,13 @@
+﻿<div class="content-form">
+    <h3>Yorum Yapın</h3>
+
+    <form method="post">
+        <input type="hidden" placeholder="@ViewBag.deger" name="Yemekid" value="@ViewBag.deger" required />
+        <input type="hidden" placeholder="ekleme tarih" name="YorumTarih" required />
+        <input type="hidden" placeholder="onay" name="YorumOnay" required />
+        <input type="text" placeholder="Kullanıcı Adı" name="YorumAdSoyad" required />
+        <input type="text" placeholder="Mail Adresi" name="YorumMail" required />
+        <textarea placeholder="Yorum" name="Yorumicerik"></textarea>
+        <input type="submit" value="GÖNDER" />
+    </form>
+</div>

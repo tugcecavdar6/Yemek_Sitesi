@@ -1,0 +1,28 @@
+﻿@using Yemek_Sitesi.Models;
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TextLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+           
+                <div class="slider">
+                    <ul class="rslides" id="slider1">
+                        @foreach (var x in Model)
+                                    {
+                        <li><img src="@x.resim" alt=""></li>
+                        }
+                    </ul>
+                </div>
+            @foreach (var x in Model)
+            {
+            <p>@x.icerik  </p>
+            }
+        </div>
+    </div>
+</div>
+
